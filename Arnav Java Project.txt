@@ -1,0 +1,386 @@
+import java.io.*;
+class projectmall
+{
+    public static void main(String args[])throws IOException
+    {
+        InputStreamReader read=new InputStreamReader(System.in);
+        BufferedReader br=new BufferedReader(read);
+        int pr,yr,cr,tr,cost,k,m,l,j,t,p,g,r,v;
+        int bill=0;    //the total bill can be calculated at end of program  
+        do{                       /*user can enter any shop after coming out
+                                                              from another*/
+            System.out.println("Welcome to our Shalimar mall");
+            System.out.println("Press 1 to enter Oneplus Exclusive Smartphone showroom");
+            System.out.println("Press 2 to enter The Great South Indian Restaurant");
+            System.out.println("Press 3 to enter PVR Privilage Movie hall");
+            System.out.println("Press 4 to enter Nani's Bakery");
+            System.out.println("Press 5 to read our Covid Guidelines");
+            System.out.println("Press 6 to exit the mall");
+            k=Integer.parseInt(br.readLine());//user will enter any shop
+            switch(k)
+            {
+                case 1:
+                System.out.println("Welcome to our showroom of oneplus smartphones");
+                System.out.println("1.Oneplus 9R=Rs.40,000");
+                System.out.println("2.Oneplus 9 Pro=Rs65,000");
+                System.out.println("3.Oneplus 9=Rs.50,000");
+                System.out.println("4.Oneplus 8=Rs.40,000");
+                System.out.println("5.Oneplus 8 Pro=Rs.50,000");
+                System.out.println("6.Oneplus 8T=Rs.39,000");
+                System.out.println("7.Oneplus 8T Cyberpunk 2077 limited edition=Rs.44,500");
+                System.out.println("Press 8 to exit the shop");
+                l=Integer.parseInt(br.readLine());
+                switch(l)
+                    {
+                        case 1:pr=40000;
+                        System.out.println("How many would you like to buy");
+                        int cn=Integer.parseInt(br.readLine());
+                        cost=pr*cn;
+                        bill=bill+cost;
+                        System.out.println("You have purchased your item succesfully");
+                        break;
+                        case 2:pr=65000;
+                        System.out.println("How many would you like to buy");
+                        int fn=Integer.parseInt(br.readLine());
+                        cost=pr*fn;
+                        bill=bill+cost;
+                        System.out.println("You have purchased your item succesfully");
+                        break;
+                        case 3:pr=50000;
+                        System.out.println("How many would you like to buy");
+                        int ln=Integer.parseInt(br.readLine());
+                        cost=pr*ln;
+                        bill=bill+cost;
+                        System.out.println("You have purchased your item succesfully");
+                        break;
+                        case 4:pr=40000;
+                        System.out.println("How many would you like to buy");
+                        int yn=Integer.parseInt(br.readLine());
+                        cost=pr*yn;
+                        bill=bill+cost;
+                        System.out.println("You have purchased your item succesfully");
+                        break;
+                        case 5:pr=50000;
+                        System.out.println("How many would you like to buy");
+                        int hn=Integer.parseInt(br.readLine());
+                        cost=pr*hn;
+                        bill=bill+cost;
+                        System.out.println("You have purchased your item succesfully");
+                        break;
+                        case 6:pr=39000;
+                        System.out.println("How many would you like to buy");
+                        int on=Integer.parseInt(br.readLine());
+                        cost=pr*on;
+                        bill=bill+cost;
+                        System.out.println("You have purchased your item succesfully");
+                        break;
+                        case 7:pr=44500;
+                        System.out.println("How many would you like to buy");
+                        int un=Integer.parseInt(br.readLine());
+                        cost=pr*un;
+                        bill=bill+cost;
+                        System.out.println("You have purchased your item succesfully");
+                        break;
+                        default:System.out.println("You have exited the shop");
+                        break;
+                    }
+                    break;
+                    case 2:
+                           System.out.println("Welcome to the Restaurant");
+                           System.out.println("We kindly inform you that you cannot get your food packed");
+                           System.out.println("Menu has been given to you");
+                           System.out.println("1.Cheese Dosa=Rs.100");
+                           System.out.println("2.Masala Dosa=Rs.120");
+                           System.out.println("3.Special Thali=Rs.150");
+                           System.out.println("4.Idli sambhar=Rs.80");
+                           System.out.println("5.Neeru Dosa=Rs.180");
+                           System.out.println("6.Uttapam=Rs.230");
+                           System.out.println("7.Plain Dosa=Rs.70");
+                           System.out.println("8.Shira=Rs.120");
+                           System.out.println("9.Sambhar Vada=Rs.100");
+                           System.out.println("Press 10 to exit the shop");
+                            m=Integer.parseInt(br.readLine());
+                           switch(m)
+                             { case 1:cr=100;
+                               System.out.println("How many plates would you like to buy");
+                                     int nc=Integer.parseInt(br.readLine());
+                                     cost=cr*nc;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 2:cr=120;
+                               System.out.println("How many plates would you like to buy");
+                                      int yc=Integer.parseInt(br.readLine());
+                                     cost=cr*yc;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 3: cr=150;
+                               System.out.println("How many plates would you like to buy");
+                                      int tc=Integer.parseInt(br.readLine());
+                                      cost=cr*tc;
+                                      bill=bill+cost;      
+                                      System.out.println("Your order is succesful");
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 4: cr=80;
+                               System.out.println("How many plates would you like to buy");
+                                      int qc=Integer.parseInt(br.readLine());
+                                      cost=cr*qc;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");  
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 5: cr=180;
+                               System.out.println("How many plates would you like to buy");
+                                      int ec=Integer.parseInt(br.readLine());
+                                      cost=cr*ec;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 6: cr=230;
+                               System.out.println("How many plates would you like to buy");
+                                      int wc=Integer.parseInt(br.readLine());
+                                      cost=cr*wc;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 7: cr=120;
+                               System.out.println("How many plates would you like to buy");
+                                      int jc=Integer.parseInt(br.readLine());
+                                      cost=cr*jc;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");                                      
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 8:cr=70;
+                               System.out.println("How many plates would you like to buy");
+                                      int oc=Integer.parseInt(br.readLine());
+                                      cost=cr*oc;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               case 9: cr=100;
+                               System.out.println("How many plates would you like to buy");
+                                      int lc=Integer.parseInt(br.readLine());
+                                      cost=cr*lc;
+                                      bill=bill+cost;
+                                      System.out.println("Your order is succesful");
+                                      System.out.println("Enjoy eating");
+                                      break;
+                               default:System.out.println("You have exited the shop");
+                            }
+                            break;
+                            case 3:
+                                   System.out.println("Welcome to PVR Privilage Movie Hall");
+                                   System.out.println("Press 1 to enter Movie theatre 1:Pushpa");
+                                   System.out.println("Press 2 to enter Movie theatre 2:RRR");
+                                   System.out.println("Press 3 to enter Movie theatre 3:Spider Man:No Way Home");                                  
+                                   System.out.println("Press 4 to exit the hall");
+                                   j=Integer.parseInt(br.readLine());
+                                   switch(j)
+                                   { case 1:System.out.println("Today's Movie: Pushpa");
+                                            System.out.println("To book the day show press 1");
+                                            System.out.println("The day show is of Rs.150");
+                                            System.out.println("To book the night show press 2");
+                                            System.out.println("The night show is of Rs.160");
+                                            System.out.println("To exit the hall press 3");
+                                            p=Integer.parseInt(br.readLine());
+                                            switch(p)
+                                            { case 1: yr=150;
+                                                     System.out.println("How many seats would you like to book");
+                                                      int ty=Integer.parseInt(br.readLine());                                                    
+                                                      cost=yr*ty;
+                                                     bill=bill+cost;
+                                                     System.out.println("You have succesfully booked the seats for the movie");
+                                                     System.out.println("The money will be added to your bill");
+                                                     System.out.println("Pls enter the theatre, the movie is about to start");
+                                                     System.out.println("Enjoy the movie");
+                                                     break;
+                                              case 2: yr=160;
+                                                     System.out.println("How many seats would you like to book");
+                                                      int fy=Integer.parseInt(br.readLine());                                                    
+                                                      cost=yr*fy;
+                                                     bill=bill+cost;
+                                                     System.out.println("You have succesfully booked the seats for the movie");
+                                                     System.out.println("The money will be added to your bill");
+                                                     System.out.println("Pls enter the theatre, the movie is about to start");  
+                                                     System.out.println("Enjoy the movie");
+                                                     break;
+                                              default:System.out.println("You have exited the hall");}
+                                            break;
+                                            case 2:System.out.println("Today's Movie: RRR");
+                                                   System.out.println("To book the day show press 1");
+                                                   System.out.println("The day show is of Rs.140");
+                                                   System.out.println("To book the night show press 2");
+                                                   System.out.println("The night show is of Rs.150");
+                                                   System.out.println("To exit the hall press 3");
+                                                   g=Integer.parseInt(br.readLine());
+                                              switch(g)
+                                              { case 1: yr=140;
+                                                     System.out.println("How many seats would you like to book");
+                                                      int gy=Integer.parseInt(br.readLine());                                                    
+                                                      cost=yr*gy;
+                                                     bill=bill+cost;
+                                                     System.out.println("You have succesfully booked the seats for the movie");
+                                                     System.out.println("The money will be added to your bill");
+                                                     System.out.println("Pls enter the theatre, the movie is about to start");
+                                                     System.out.println("Enjoy the movie");
+                                                     break;
+                                              case 2: yr=150;
+                                                     System.out.println("How many seats would you like to book");
+                                                      int dy=Integer.parseInt(br.readLine());                                                    
+                                                      cost=yr*dy;
+                                                     bill=bill+cost;
+                                                     System.out.println("You have succesfully booked the seats for the movie");
+                                                     System.out.println("The money will be added to your bill");
+                                                     System.out.println("Pls enter the theatre, the movie is about to start");
+                                                     System.out.println("Enjoy the movie");
+                                                     break;
+                                              default:System.out.println("You have exited the hall");
+                                            }
+                                              break;
+                                            case 3:System.out.println("Today's Movie: Spider Man:No Way Home");
+                                                   System.out.println("To book the day show press 1");
+                                                   System.out.println("The day show is of Rs.150");
+                                                   System.out.println("To book the night show press 2");
+                                                   System.out.println("The night show is of Rs.170");
+                                                   System.out.println("To exit the hall press 3");
+                                                   r=Integer.parseInt(br.readLine());
+                                              switch(r)
+                                              { case 1: yr=150;
+                                                     System.out.println("How many seats would you like to book");
+                                                     int ey=Integer.parseInt(br.readLine());                                                    
+                                                      cost=yr*ey;
+                                                     bill=bill+cost;
+                                                     System.out.println("You have succesfully booked the seats for the movie");
+                                                     System.out.println("The money will be added to your bill");
+                                                     System.out.println("Pls enter the theatre, the movie is about to start");
+                                                     System.out.println("Enjoy the movie");
+                                                     break;
+                                              case 2: yr=170;
+                                                     System.out.println("How many seats would you like to book");
+                                                     int wy=Integer.parseInt(br.readLine());                                                    
+                                                      cost=yr*wy;
+                                                     bill=bill+cost;
+                                                     System.out.println("You have succesfully booked the seats for the movie");
+                                                     System.out.println("The money will be added to your bill");
+                                                     System.out.println("Pls enter the theatre, the movie is about to start");  
+                                                     System.out.println("Enjoy the movie");
+                                                     break;
+                                              default:System.out.println("You have exited the hall");
+                                            }}
+                                            break;
+                                            case 4:System.out.println("Welcome to Nani's Bakery");
+                                                   System.out.println("We sell the following items:");
+                                                   System.out.println("1.Almond cookies=Rs.70");
+                                                   System.out.println("2.Choclate chip cookies=Rs.110");
+                                                   System.out.println("3.Sugar cookies=Rs.60");
+                                                   System.out.println("4.Shortbread cookies=Rs.80");
+                                                   System.out.println("5.Biscotti cookies=Rs.90");
+                                                   System.out.println("6.Gingerbread cookies=Rs.100");
+                                                   System.out.println("7.Oatmeal rasin cookies=Rs.90");
+                                                   System.out.println("8.Peanut butter cookies=Rs.120");
+                                                   System.out.println("9.Macron cookies=Rs.90");
+                                                   System.out.println("Press 10 to exist the shop");
+                                                   t=Integer.parseInt(br.readLine());
+                                                 switch(t)
+                                                 { case 1: tr=70;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int kz=Integer.parseInt(br.readLine());
+                                                           cost=tr*kz;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                  case 2: tr=110;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int hz=Integer.parseInt(br.readLine());
+                                                          cost=tr*hz;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                  case 3: tr=60;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int jz=Integer.parseInt(br.readLine());
+                                                           cost=tr*jz;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                  case 4: tr=80;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int mz=Integer.parseInt(br.readLine());
+                                                           cost=tr*mz;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                  case 5: tr=90;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int nz=Integer.parseInt(br.readLine());
+                                                           cost=tr*nz;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                  case 6: tr=100;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int bz=Integer.parseInt(br.readLine());
+                                                           cost=tr*bz;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                  case 7: tr=90;
+                                                          System.out.println("How many packets would you like to buy");
+                                                           int az=Integer.parseInt(br.readLine());
+                                                           cost=tr*az;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                  case 8: tr=120;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int xz=Integer.parseInt(br.readLine());
+                                                           cost=tr*xz;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");
+                                                          break;
+                                                          case 9: tr=90;
+                                                          System.out.println("How many packets would you like to buy");
+                                                          int z=Integer.parseInt(br.readLine());
+                                                          cost=tr*z;
+                                                          bill=bill+cost;
+                                                          System.out.println("You have purchased your item succesfully");  
+                                                          break;
+                                                          default:System.out.println("You have exited the shop");
+                                                }
+                                                break;
+                                                case 5:System.out.println("Our Guidelines are as follows:");
+                                                       System.out.println("Wear Mask Properly");
+                                                       System.out.println("Follow Social Distancing");
+                                                       System.out.println("Sanitize your hands at regular intervals");
+                                                       System.out.println("Please don't remove your mask");
+                                                       break;
+                                                    default:System.out.println("You have exited the mall. Now please pay the bill");}
+                                                } while(k!=6);   //the user cannot accidentally leave the mall
+                                               
+                                                System.out.println("We would like to inform you that your bill is being calculated. Kindly wait");                                                                                                    
+                                                   System.out.println("The total bill=Rs"+bill);                                                    
+                                                   do{   System.out.println("Press 1 to pay the bill with cash");
+                                                         System.out.println("Press 2 to pay the bill with card");
+                                                   v=Integer.parseInt(br.readLine());
+                                                      switch(v)
+                                                      {case 1:
+                                                              System.out.println("You have successfully paid the bill");
+                                                              System.out.println("Thank you for shopping with us");
+                                                              break;
+                                                       case 2:
+                                                              System.out.println("You have successfully paid the bill");
+                                                              System.out.println("Thank you for shopping with us");
+                                                              break;
+                                                       default:System.out.println("Please pay the bill");
+                                                    }
+                                                    }while(v!=1&&v!=2);//the user cannot leave the mall without either paying for or returning the items
+                                        }}     
+
